@@ -645,8 +645,8 @@
     fetch = {
       type = "git";
       url = "https://github.com/caddy-dns/cloudflare";
-      rev = "728f5b67d095";
-      sha256 = "0sl935a80k6hldc5cqgfshahvygmgvwfqma3zi8j0jvy198ydwn1";
+      rev = "8ea1cff3f818";
+      sha256 = "07frgjmmkaadivp1y0zvgv9kcj95rsjhwy7337vh1s1wrp19zjds";
       moduleDir = "";
     };
   }
@@ -655,8 +655,8 @@
     fetch = {
       type = "git";
       url = "https://github.com/caddyserver/caddy";
-      rev = "v2.4.0-beta.1";
-      sha256 = "189cbw8y2ngjjcvz4r2w4l0hknsg7hx56iqy1fw8qwx8bn9bjw3c";
+      rev = "v2.4.1";
+      sha256 = "1myr13k2x5h3zsq11zgqnzsvkq24c61z63x29wa6lra51qvxxkjr";
       moduleDir = "";
     };
   }
@@ -665,8 +665,8 @@
     fetch = {
       type = "git";
       url = "https://github.com/caddyserver/certmagic";
-      rev = "ebb8d8b435b4";
-      sha256 = "139khkkcr5x1fvyyjy0j6as15r8cj4dvybhkn9i0ac0s7hlvm0jw";
+      rev = "v0.13.1";
+      sha256 = "18q5mf4jnxkp1aqfc9khkj3gqnpkbc7d1qj1r2zxwy05i6dfwh0h";
       moduleDir = "";
     };
   }
@@ -1251,16 +1251,6 @@
     };
   }
   {
-    goPackagePath = "github.com/go-redis/redis";
-    fetch = {
-      type = "git";
-      url = "https://github.com/go-redis/redis";
-      rev = "v6.15.9";
-      sha256 = "1y13zhv4isf28bq249pz9dp08rb8amyfp2gdbfah09zcmlhjsaki";
-      moduleDir = "";
-    };
-  }
-  {
     goPackagePath = "github.com/go-sql-driver/mysql";
     fetch = {
       type = "git";
@@ -1445,8 +1435,8 @@
     fetch = {
       type = "git";
       url = "https://github.com/golang/mock";
-      rev = "v1.4.4";
-      sha256 = "1lj0dvd6div4jaq1s0afpwqaq9ah8cxhkq93wii2ably1xmp2l0a";
+      rev = "v1.5.0";
+      sha256 = "12l7p08pwwk3xn70w7rlm28nz6jf4szlzgjxjfmbssyirxxxy8v1";
       moduleDir = "";
     };
   }
@@ -1785,8 +1775,8 @@
     fetch = {
       type = "git";
       url = "https://github.com/google/uuid";
-      rev = "v1.1.1";
-      sha256 = "0hfxcf9frkb57k6q0rdkrmnfs78ms21r1qfk9fhlqga2yh5xg8zb";
+      rev = "v1.2.0";
+      sha256 = "08wqig98w23cg2ngjijhgm6s0mdayb95awa3cn3bs69lg20gryac";
       moduleDir = "";
     };
   }
@@ -2375,8 +2365,8 @@
     fetch = {
       type = "git";
       url = "https://github.com/klauspost/cpuid";
-      rev = "v2.0.1";
-      sha256 = "07rnsfwc1sxj4bhivb3s82nywgihdvnicqq953m85rhxyqv5c1pk";
+      rev = "v2.0.6";
+      sha256 = "0bfs78dfrh888wm2vh095xvgh7lqpw34k0h4lxhr0nsrqs1qq0wv";
       moduleDir = "";
     };
   }
@@ -2515,8 +2505,8 @@
     fetch = {
       type = "git";
       url = "https://github.com/lucas-clemente/quic-go";
-      rev = "v0.19.3";
-      sha256 = "1ykkzh09p9xzpnsi9k9zm8lvr42d22ynmq17kb1ylwfhb06xnaf9";
+      rev = "v0.20.1";
+      sha256 = "0620drwikag4vcwdhsymyv6zl7vvv0mfdwq2z5a843fllrb7d9br";
       moduleDir = "";
     };
   }
@@ -2595,8 +2585,18 @@
     fetch = {
       type = "git";
       url = "https://github.com/marten-seemann/qtls-go1-15";
-      rev = "v0.1.1";
-      sha256 = "1h725y3p7f49mjiazdjv1iswcrvpvh65xp4b2i2xqiy0qp12w5nw";
+      rev = "v0.1.4";
+      sha256 = "06aa0bn737mmpy8fpdymca1kxbqbbs78bxipv8gprsymmqhfz2wz";
+      moduleDir = "";
+    };
+  }
+  {
+    goPackagePath = "github.com/marten-seemann/qtls-go1-16";
+    fetch = {
+      type = "git";
+      url = "https://github.com/marten-seemann/qtls-go1-16";
+      rev = "v0.1.3";
+      sha256 = "1idlia5m3ril9fglhbaxzr6p4zvfjbi9lghsvs965rdbpqffg51r";
       moduleDir = "";
     };
   }
@@ -4385,8 +4385,8 @@
     fetch = {
       type = "git";
       url = "https://go.googlesource.com/mod";
-      rev = "c90efee705ee";
-      sha256 = "0i5md645rmcy5z5ij9ng428k9rz4g3k1kjy3blsq1264rn426gdf";
+      rev = "v0.3.0";
+      sha256 = "0ldgbx2zpprbsfn6p8pfgs4nn87gwbfcv2z0fa7n8alwsq2yw78q";
       moduleDir = "";
     };
   }
@@ -4435,8 +4435,18 @@
     fetch = {
       type = "git";
       url = "https://go.googlesource.com/sys";
-      rev = "f9fddec55a1e";
-      sha256 = "139kfbsajbjnr85nvkhr67wczy8pmim4jbfg4la1m2zhhiv0xhwc";
+      rev = "2d18734c6014";
+      sha256 = "02w70mjbhfm449vlhvs7dmqcqyi54m5p2bzq5g3h7dhdpcwjib0g";
+      moduleDir = "";
+    };
+  }
+  {
+    goPackagePath = "golang.org/x/term";
+    fetch = {
+      type = "git";
+      url = "https://go.googlesource.com/term";
+      rev = "de623e64d2a6";
+      sha256 = "12yxniq7d8hv4ix7dibzaba1n7n5yi2s9blh070fj9bdyyj3yzic";
       moduleDir = "";
     };
   }

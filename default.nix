@@ -1,10 +1,9 @@
 { pkgs ? import (import ./nix/sources.nix).nixpkgs {} }:
 with pkgs;
 let
-  version = "2.4.0-beta.2";
-in
-rec {
-  cloudflare-dns-caddy = buildGoPackage rec {
+  version = "2.4.1";
+in rec {
+  caddy = buildGoPackage rec {
     name = "caddy";
     rev = "v${version}";
     goPackagePath = "caddy";
@@ -25,7 +24,7 @@ rec {
     '';
   };
   docker = dockerTools.buildLayeredImage {
-    name = cloudflare-dns-caddy.name;
+    name = caddy.name;
     created = "now";
     config = {
       Env = [
@@ -35,7 +34,7 @@ rec {
         "CADDY_VERSION=${version}"
       ];
       Cmd = [ 
-        "${cloudflare-dns-caddy}/bin/caddy"
+        "${caddy}/bin/caddy"
         "run"
         "-watch"
         "-environ"
