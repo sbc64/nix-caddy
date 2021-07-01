@@ -1,7 +1,7 @@
 { pkgs ? import (import ./nix/sources.nix).nixpkgs {} }:
 with pkgs;
 let
-  version = "2.4.1";
+  version = "2.4.3";
 in rec {
   caddy = buildGoPackage rec {
     name = "caddy";
