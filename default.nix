@@ -41,7 +41,7 @@ in rec {
         "--adapter"
         "caddyfile"
         "--config"
-        "/Caddyfile"
+        "$XDG_CONFIG_HOME/Caddyfile"
       ];
     };
   };
